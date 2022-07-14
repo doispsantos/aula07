@@ -1,0 +1,66 @@
+class Pessoa:
+    def __init__(self, nome, idade, cpf):
+        self.__nome = nome
+        self.__idade = idade
+        self.__cpf = cpf
+    @property
+    def nome(self):
+        return self.__nome
+    @nome.setter
+    def nome(self, nome):
+        self.__nome = nome
+
+    @property
+    def idade(self):
+       return self.__idade
+
+    @idade.setter
+    def idade(self, idade):
+        return  self.__idade
+
+
+#exerc2
+
+class Carro:
+    def __init__(self, marca, cor, velocidade):
+        self. marca = marca
+        self. cor = cor
+        self. velocidade = velocidade
+    @property
+    def marca(self, cor):
+        self.__cor = cor
+
+    @property
+    def cor(self, cor):
+        self.__
+
+
+    def acelerar(self):
+        velocidade_atual = self.velocidade + 10
+
+        if velocidade_atual > 200:
+           self.velocidade = 200
+        else:
+            self.velocidade += 10
+
+    def frear(self):
+        velocidade_atual = self.__velocidade - 10
+
+'''
+
+#exerc3
+
+class Funcionario
+    def __init__(self, matricula, nome, salario):
+        self.__matricula = matricula
+        self.__nome = nome
+        self.__salario = salario
+        
+class Estagiario(Funcionario):
+    def __init__(self, matricula, nome, salario):
+        super().__init__(matricula, nome, salario)
+
+class Gerente(Funcionario):
+    def __init__(self, matricula, nome, salario):
+        super().__init__(matricula, nome, salario)
+    
